@@ -5,6 +5,7 @@ const operators = document.querySelectorAll('[data-operator]');
 const resultBtn = document.querySelector('[data-result]');
 const deleteBtn = document.querySelector('[data-delete]');
 const clearBtn = document.querySelector('[data-clear]');
+const dotBtn = document.querySelector('[data-dot]')
 
 // Variables to store data
 let operator;
@@ -33,7 +34,7 @@ const compute = () => {
             result = prevInput * newInput;
             screen.value = result;
             break; 
-        case '/':
+        case '÷':
             result = prevInput / newInput;
             screen.value = result;
             break;
@@ -51,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Number buttons  
 numberBtns.forEach(btn => {
-    btn.addEventListener('click', e => { 
+    btn.addEventListener('click', (e) => { 
         screen.value += e.currentTarget.innerText;
     })  
 });
@@ -68,13 +69,21 @@ operators.forEach((btn) => {
 // ResultBtn
 resultBtn.addEventListener('click', () => {
     newInput = parseFloat(screen.value);
-    clearScreen();
     compute();
 });
 
-// AC Button 
+// AC button 
 clearBtn.addEventListener('click', () => {
     clearScreen();
 });
 
-// c soll die letzte eingegebene zahl löschen  
+// Delete button
+deleteBtn.addEventListener('click', () => {
+    screen.value = screen.value.slice(0, -1);
+});
+
+dotBtn.addEventListener('click', () => {
+    if (!screen.value.includes('.')) {
+        screen.value += dotBtn.innerText;
+    }
+});
