@@ -13,7 +13,6 @@ let prevInput;
 let newInput;
 let result;
 
-
 // Functions
 
 const reset = () => {
@@ -67,8 +66,9 @@ window.addEventListener('DOMContentLoaded', () => {
 // Number buttons  
 numberBtns.forEach(btn => {
     btn.addEventListener('click', (e) => { 
-        screen.value += e.currentTarget.innerText;
-    })  
+        if (screen.value.length < 16)
+            screen.value += e.currentTarget.innerText;
+     })  
 });
 
 // Operator buttons
@@ -80,7 +80,6 @@ operators.forEach((btn) => {
         resultBtn.addEventListener('click', clickedResult);
         })
     })
-
 
 // AC button 
 clearBtn.addEventListener('click', () => {
