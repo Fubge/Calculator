@@ -5,7 +5,6 @@ This is a simple calculator implemented using HTML, CSS, and JavaScript. It allo
 ## Example
 ![grafik](https://github.com/Fubge/Calculator/assets/115476150/b0288115-ea36-44e7-895a-563bf5ba6b1a)
 
-
 ## Usage
 
 1. The calculator display shows the current input and the result of calculations.
@@ -31,7 +30,7 @@ Perform addition:
 - The maximum number of digits that can be entered is 16.
 - The calculator does not support advanced mathematical functions or operations.
 
-### Copyright (C) 2023 Fubge
+## Copyright (C) 2023 Fubge
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
