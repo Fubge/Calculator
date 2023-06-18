@@ -2,8 +2,9 @@
 
 This is a simple calculator implemented using HTML, CSS, and JavaScript. It allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-![Calculator Example](![grafik](https://github.com/Fubge/Calculator/assets/115476150/4ef26808-d5a9-4c55-b548-f4f08e8d1c7e)
-)
+## Example
+![grafik](https://github.com/Fubge/Calculator/assets/115476150/b0288115-ea36-44e7-895a-563bf5ba6b1a)
+
 
 ## Usage
 
